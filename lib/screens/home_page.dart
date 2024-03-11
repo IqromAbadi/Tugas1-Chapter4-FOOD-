@@ -60,7 +60,7 @@ class _HomePageState extends State<HomePage> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Image.asset(
-                    "assets/food.png",
+                    "assets/logo.png",
                     width: 100,
                   ),
                   Expanded(
@@ -283,6 +283,9 @@ Body() {
                                       color: Colors.amber,
                                       borderRadius: BorderRadius.circular(4),
                                     ),
+                                    child: Center(
+                                      child: Text("Deskripsi"),
+                                    ),
                                   ),
                                 )
                               ],
@@ -318,7 +321,7 @@ Body() {
                           color: Colors.black,
                           image: DecorationImage(
                             image: AssetImage(
-                              "assets/burger.jpg",
+                              "assets/hotdog.jpg",
                             ),
                             fit: BoxFit.cover,
                           ),
@@ -332,7 +335,7 @@ Body() {
                               padding: const EdgeInsets.only(
                                   left: 5, right: 5, top: 5),
                               child: Text(
-                                "Burger",
+                                "Hotdog",
                                 style: TextStyle(
                                   fontSize: 18,
                                   fontWeight: FontWeight.bold,
@@ -370,92 +373,8 @@ Body() {
                                       color: Colors.amber,
                                       borderRadius: BorderRadius.circular(4),
                                     ),
-                                  ),
-                                )
-                              ],
-                            ),
-                          ],
-                        ),
-                      )
-                    ],
-                  ),
-                ],
-              ),
-              Stack(
-                children: [
-                  Container(
-                    height: 180,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: Colors.grey[200],
-                      border: Border.all(
-                        color: Colors.grey.shade200,
-                        width: 1,
-                      ),
-                    ),
-                  ),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Container(
-                        height: 110,
-                        width: double.infinity,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          color: Colors.black,
-                          image: DecorationImage(
-                            image: AssetImage(
-                              "assets/burger.jpg",
-                            ),
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                      ),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.only(
-                                  left: 5, right: 5, top: 5),
-                              child: Text(
-                                "Burger",
-                                style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Container(
-                                  height: 40,
-                                  width: 105,
-                                  decoration: BoxDecoration(
-                                    color: Colors.transparent,
-                                  ),
-                                  child: Padding(
-                                    padding: const EdgeInsets.only(
-                                        left: 5, right: 5),
-                                    child: Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.start,
-                                      children: [
-                                        Icon(Icons.access_alarm),
-                                        Text("25 Menit")
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.only(right: 5),
-                                  child: Container(
-                                    height: 20,
-                                    width: 70,
-                                    decoration: BoxDecoration(
-                                      color: Colors.amber,
-                                      borderRadius: BorderRadius.circular(4),
+                                    child: Center(
+                                      child: Text("Deskripsi"),
                                     ),
                                   ),
                                 )
@@ -492,7 +411,7 @@ Body() {
                           color: Colors.black,
                           image: DecorationImage(
                             image: AssetImage(
-                              "assets/burger.jpg",
+                              "assets/orangechicken.jpg",
                             ),
                             fit: BoxFit.cover,
                           ),
@@ -506,7 +425,7 @@ Body() {
                               padding: const EdgeInsets.only(
                                   left: 5, right: 5, top: 5),
                               child: Text(
-                                "Burger",
+                                "Orange Chicken",
                                 style: TextStyle(
                                   fontSize: 18,
                                   fontWeight: FontWeight.bold,
@@ -541,8 +460,11 @@ Body() {
                                     height: 20,
                                     width: 70,
                                     decoration: BoxDecoration(
-                                      color: Colors.amber,
+                                      color: Colors.red,
                                       borderRadius: BorderRadius.circular(4),
+                                    ),
+                                    child: Center(
+                                      child: Text("Soon"),
                                     ),
                                   ),
                                 )
@@ -579,7 +501,7 @@ Body() {
                           color: Colors.black,
                           image: DecorationImage(
                             image: AssetImage(
-                              "assets/burger.jpg",
+                              "assets/ramen.jpg",
                             ),
                             fit: BoxFit.cover,
                           ),
@@ -593,7 +515,7 @@ Body() {
                               padding: const EdgeInsets.only(
                                   left: 5, right: 5, top: 5),
                               child: Text(
-                                "Burger",
+                                "Ramen",
                                 style: TextStyle(
                                   fontSize: 18,
                                   fontWeight: FontWeight.bold,
@@ -617,7 +539,7 @@ Body() {
                                           MainAxisAlignment.start,
                                       children: [
                                         Icon(Icons.access_alarm),
-                                        Text("25 Menit")
+                                        Text("20 Menit")
                                       ],
                                     ),
                                   ),
@@ -630,6 +552,99 @@ Body() {
                                     decoration: BoxDecoration(
                                       color: Colors.amber,
                                       borderRadius: BorderRadius.circular(4),
+                                    ),
+                                    child: Center(
+                                      child: Text("Deskripsi"),
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                ],
+              ),
+              Stack(
+                children: [
+                  Container(
+                    height: 180,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Colors.grey[200],
+                      border: Border.all(
+                        color: Colors.grey.shade200,
+                        width: 1,
+                      ),
+                    ),
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Container(
+                        height: 110,
+                        width: double.infinity,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.black,
+                          image: DecorationImage(
+                            image: AssetImage(
+                              "assets/bakmi.jpg",
+                            ),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(
+                                  left: 5, right: 5, top: 5),
+                              child: Text(
+                                "Bakmi",
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Container(
+                                  height: 40,
+                                  width: 105,
+                                  decoration: BoxDecoration(
+                                    color: Colors.transparent,
+                                  ),
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(
+                                        left: 5, right: 5),
+                                    child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                      children: [
+                                        Icon(Icons.access_alarm),
+                                        Text("15 Menit")
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(right: 5),
+                                  child: Container(
+                                    height: 20,
+                                    width: 70,
+                                    decoration: BoxDecoration(
+                                      color: Colors.amber,
+                                      borderRadius: BorderRadius.circular(4),
+                                    ),
+                                    child: Center(
+                                      child: Text("Deskripsi"),
                                     ),
                                   ),
                                 )
