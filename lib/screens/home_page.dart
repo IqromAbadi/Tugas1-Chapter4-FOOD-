@@ -35,6 +35,14 @@ class _HomePageState extends State<HomePage> {
       "Pastry",
     ];
 
+    List<String> tabImages = [
+      "assets/all.png",
+      "assets/food.jpg",
+      "assets/drink.png",
+      "assets/snack.png",
+      "assets/pastry.png",
+    ];
+
     return Column(
       children: [
         Stack(
@@ -152,15 +160,22 @@ class _HomePageState extends State<HomePage> {
                                 : Border.all(color: Colors.red, width: 2)),
                         child: Center(
                           child: Padding(
-                            padding: const EdgeInsets.all(10),
+                            padding: const EdgeInsets.all(2),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Image.asset(
-                                  "assets/food.png",
+                                Container(
                                   width: 30,
                                   height: 30,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10),
+                                    image: DecorationImage(
+                                      image: AssetImage(tabImages[index]),
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
                                 ),
+                                SizedBox(width: 3),
                                 Text(items[index]),
                               ],
                             ),
